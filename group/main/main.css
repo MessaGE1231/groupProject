@@ -1,0 +1,206 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    color: dark;
+}
+
+body {
+    background-color: white;
+}
+
+#firstBlock{
+    background-image: url("images/carousel.png");
+    background-repeat: no-repeat;
+    height: 954px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+
+h1 {
+    background: linear-gradient(115deg, #000000, #36E6D1);
+    height: fit-content;
+    width: 876px;
+    border-radius: 1000px;
+    border-style: sold;
+    border-bottom-width: medium;
+    opacity: 0.6;
+    color: white;
+    font-family: Inter, Roboto;
+    font-size: 32px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 350px;
+}
+
+#more {
+    display: grid;
+    align-items: center;
+    height: 85px;
+    width: 396px;
+    background-color: #000000; 
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Inter, Roboto;
+    border: 3px solid #000000;
+    border-radius: 100px;
+    margin-bottom: 175px;
+}
+
+/* надо будет посмотреть т.к. у меня не получилось сделать данную кнопкук как в макете */
+
+ .text {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+.block {
+    background-color: #564592;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 40px;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+} 
+
+.textParagraph {
+    padding: 225px;
+}
+
+#container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#container > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#anotherOneCampaignBanner > a {
+    height: 75px;
+    width: 394px;
+    border-radius: 74px;
+    border-color: white;
+    border-style: sold;
+    border-bottom-width: medium;
+    color: white;
+    font-family: Inter, Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.6;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 45px; 
+}
+
+#numberOne {
+    height: 75px;
+    width: 800px;
+    background-color: #E6D992;
+    border-radius: 15px;
+    border-color: #000000;
+    border-style: solid;
+    border-bottom-width: initial;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    font-size: 32px;
+    color: #000000;
+}
+
+#numberTwo {
+    height: 75px;
+    width: 800px;
+    background-color: #DCDBDB;
+    border-radius: 15px;
+    border-color: #000000;
+    border-style: solid;
+    border-bottom-width: initial;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    font-size: 32px;
+    color: #000000;
+}
+
+#numberThree {
+    height: 75px;
+    width: 800px;
+    background-color: #FFD0A1;
+    border-radius: 15px;
+    border-color: #000000;
+    border-style: solid;
+    border-bottom-width: initial;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    font-size: 32px;
+    color: #000000;
+}
+
+.otherUser {
+    height: 75px;
+    width: 800px;
+    background-color: #F9F9F9;
+    border-radius: 15px;
+    border-color: #000000;
+    border-style: solid;
+    border-bottom-width: initial;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    font-size: 32px;
+    color: #000000;
+}
+
+#numberOne > img {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.num {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.nameUser {
+    padding-right: 15px;
+    padding-left: 70px;
+}
+
+.rating {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#anotherOneCampaignBanner {
+    width: 862px;
+    background: linear-gradient(45deg, #564592, #36E6D1);
+    border-radius: 109px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#anotherOneCampaignBanner > p {
+    color: white;
+    font-family: Inter, Roboto;
+    font-size: 36px;
+    font-weight: normal;
+    padding-top: 20px;
+}

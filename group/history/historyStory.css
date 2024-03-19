@@ -1,0 +1,140 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    color: dark;
+}
+
+body {
+    background-color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#firstContainer {
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#activePage {
+    background-color: #ECE8FA;
+}
+
+.sectFC {
+    background-color: #F8F8F8;
+    width: 565px;
+    height: 115px;
+    border-radius: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter, Roboto;
+    font-size: 48px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.imagesSectFC {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D9D9;
+    width: 565px;
+    height: 115px;
+    border-radius: 1000px;
+    font-family: Inter, Roboto;
+    font-size: 48px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.imagesSectFC > img {
+    margin-left: 20px;
+}
+
+#secondContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#historyScroll {
+    height: 830px;
+    width: 924px;
+    font-size: 28px;
+    font-family: Inter, Roboto;
+    background-color: #F8F8F8;
+    border-radius: 100px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    direction: rtl;
+    scrollbar-color: white gray;
+    scrollbar-width: thin;
+}
+
+#historyScroll::-webkit-scrollbar {
+    width: 6px;              
+}
+
+#historyScroll::-webkit-scrollbar-track {
+    width: 2px;
+    height: 2px;
+    background-color: white;     
+}
+
+#historyScroll::-webkit-scrollbar-thumb {
+    width: 2px;
+    height: 2px;
+    background-color: gray;  
+}
+
+.historyAssessments {
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+}
+
+.historyAssessments > p {
+    height: 100px;
+}
+
+.firstTextBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1.5px solid black;
+    border-right: 1.5px solid black;
+}
+
+.secondTextBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1.5px solid black;
+}
+
+.thirdTextBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1.5px solid black;
+    border-left: 1.5px solid black;
+}
+
+.thirdTextBlock > img {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.historyTablBlock {
+    direction: ltr;
+}
