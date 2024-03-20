@@ -10,17 +10,27 @@
 <body>
     <header>
         <article id="navLogo">
-                <img src="imagesHeadFoot/novgu.png" href="vk.com" alt="0" height="50" width="140">
+            <img src="imagesHeadFoot/logo-novgu.png" href="vk.com" alt="0" height="50" width="50">
+            <img src="imagesHeadFoot/novgu.png" href="vk.com" alt="0" height="50" width="140">
         </article>
         <nav id="navLink">
-            <a type="button" href="#" class="link">Топ 10 студентов</a>
-            <a type="button" href="#" class="link">О нас</a>
-            <a type="button" href="#" class="link">Ещё</a>
+
+                <a type="button" href="#container" class="link">Топ 5 студентов</a>
+                <a type="button" href="#aboutUs" class="link">О нас</a>
+            <section class="link accordionSection" id="buttonSection">
+                <button  id="buttonAcordion">Ещё</button>
+            </section>
         </nav>
-        <article id="navEnter">
-            <section>
-                <a type="button" href="#">Войти</a>
-                <img src="imagesHeadFoot/profile.png" alt="0" height="48" width="48">
+        <article class="headerKoin">
+            <section id="navEnter">
+
+                <section >
+                    <p>Твои ПТКоины</p>
+                    <p>999.999</p>
+                </section>    
+                <section class="headerKoinImg">
+                    <img src="imagesHeadFoot/student.png" alt="0" height="55" width="55">
+                </section>
             </section>
         </article>
     </header>
@@ -28,23 +38,31 @@
         <article id="firstBlock">
             <h1>Мы - команда энтузиастов,<br> которая придумала супер-идею! Теперь каждый<br> студент сможет стать настоящим<br> героем своего колледжа, развивая свою<br> духовность и активно участвуя в жизни<br> учебного заведения</h1>
             <button id="more">Подробнее</button>
+
         </article>
-        <article class="text">
+
+        <section class="modalAppSection">
+            <article class="modalAppContent">
+                <h2>Регистрация</h2>
+            </article>
+        </section>
+
+        <article id="aboutUs" class="text">
                 <h2>О нас</h2>
         </article>
-        <article class="block">
-                <img src="images/people1.png" alt="0">
+        <article class="blockOne">
+                <img src="images/people1.png" alt="0" height="684" width="635">
                 <P  class="textParagraph">Да, ты не ослышался! Мы предлагаем<br> уникальную возможность для студентов<br> почувствовать себя настоящими<br> звездами своего колледжа. Забудь о<br> скучных и однообразных буднях -<br> теперь ты можешь воплотить свои<br> самые смелые идеи в жизнь!</P>
         </article>
         <article class="text">
                 <h2>Студенческая жизнь</h3>
         </article>
-        <article class="block">
+        <article class="blockTwo">
                 <p class="textParagraph">Студенческая жизнь - это время, когда вы можете открыть для<br> себя новые возможности, развить<br> свои навыки и увлечения, а также<br> создать незабываемые<br> воспоминания.</p>
-                <img src="images/people2.png" alt="0">
+                <img src="images/people2.png" alt="0" height="684" width="680">
         </article>
         <article class="text">
-            <h2>Топ 10 студентов</h4>
+            <h2>Топ 5 студентов</h4>
         </article>
         <article id="container">
         <section>
@@ -86,12 +104,8 @@
         </article>
     </main>
     <footer>
-        <article>
-            <p>Мы молодая и энергичная команда,<br> готовая принять любые вызовы и<br> достичь целей. Наша страсть к работе<br> помогает нам преодолевать<br> препятствия и постоянно развиваться.<br> Мы гордимся быть частью этой<br> команды.</p>
-            <p>Студенты гр.2993</p>
-        </article>
-        <article>
-            <p>Следите за нами в соц.сетях<br> для актуальных новостей и<br> интересных акций!</p>
+        <p>Следите за нами в<br> соц.сетях для<br> актуальных новостей и<br> интересных акций!</p>
+        <article id="fotoLinks">
             <a href="vk.com">
                 <img src="imagesHeadFoot/vk.png" alt="0">
             </a>
@@ -105,14 +119,26 @@
                 <img src="imagesHeadFoot/telegram.png" alt="0">
             </a>       
         </article>
-        <article>
-            <h5>Адреса колледжей:</h5>
-            <p>ПТК НовГУ - ул. Большая Санкт-<br>Петербургская, 46, Великий<br> Новгород, 173003.</p>
-            <p>НовГУ - Великий Новгород, ул.<br> Большая Санкт-Петербургская, 41</p>
+        <article id="internetResources">
+            <h5>Интернет ресурсы НовГУ:</h5>
+            <section>
+                <a href="pk.novsu.ru">pk.novsu.ru</a>
+                <a href="novsu.ru">novsu.ru</a>
+                <a href="portal.novsu.ru">portal.novsu.ru</a>
+                <a href="do.novsu.ru">do.novsu.ru</a>
+            </section>
         </article>
-        <article>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1041.1074149428075!2d31.263725099232186!3d58.54141495901585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1708532031852!5m2!1sru!2sru" width="600" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <article id="address">
+            <h5>Адреса колледжей:</h5>
+            <section>
+                <p>ПТК НовГУ - ул. Большая Санкт-<br>Петербургская, 46, Великий<br> Новгород, 173003.</p>
+                <p>НовГУ - Великий Новгород, ул.<br> Большая Санкт-Петербургская, 41</p>
+            </section>
+        </article>
+        <article id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1041.1074149428075!2d31.263725099232186!3d58.54141495901585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1708532031852!5m2!1sru!2sru" width="229" height="160" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </article>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

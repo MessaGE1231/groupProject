@@ -1,0 +1,126 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    color: dark;
+}
+
+body {
+    background-color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#firstContainer {
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#activePage {
+    background-color: #ECE8FA;
+}
+
+.sectFC {
+    background-color: #F8F8F8;
+    width: 565px;
+    height: 115px;
+    border-radius: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter, Roboto;
+    font-size: 48px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.imagesSectFC {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D9D9;
+    width: 565px;
+    height: 115px;
+    border-radius: 1000px;
+    font-family: Inter, Roboto;
+    font-size: 48px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.imagesSectFC > img {
+    margin-left: 20px;
+}
+
+#secondContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#fioBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#student {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter, Roboto;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+#student > img {
+    margin-right: 10px;
+}
+
+#rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    font-family: Inter, Roboto;
+    font-size: 58px;
+    font-weight: 600;
+}
+
+#assessment {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1155px;
+    height: 151px;
+    border-radius: 31px;
+    background-color: #1C3578BF;
+    color: white;
+    font-family: Inter, Roboto;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+#assessment > button {
+    width: 325px;
+    height: 70px;
+    background-color: #B40000BF;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px black;
+    color: white;
+    font-family: Inter, Roboto;
+    font-size: 32px;
+}

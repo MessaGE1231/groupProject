@@ -4,98 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="historyStory.css">
     <link rel="stylesheet" href="head&footStyle.css">
+    <link rel="stylesheet" href="historyStory.css">
 </head>
 <body>
     <header>
         <article id="navLogo">
-                <img src="imagesHeadFoot/novgu.png" href="vk.com" alt="0" height="50" width="140">
+            <img src="imagesHeadFoot/logo-novgu.png" href="vk.com" alt="0" height="50" width="50">
+            <img src="imagesHeadFoot/novgu.png" href="vk.com" alt="0" height="50" width="140">
         </article>
         <nav id="navLink">
-            <a type="button" href="#" class="link">Топ 10 студентов</a>
-            <a type="button" href="#" class="link">О нас</a>
-            <a type="button" href="#" class="link">Ещё</a>
+            <a type="button" href="../main/main.html" class="link">Топ 5 студентов</a>
+            <a type="button" href="../main/main.html" class="link">О нас</a>
+            <section class="link accordionSection" id="buttonSection">
+                <button  id="buttonAcordion">Ещё</button>
+            </section>
         </nav>
         <article id="navEnter">
             <section>
-                <a type="button" href="#">Войти</a>
-                <img src="imagesHeadFoot/profile.png" alt="0" height="48" width="48">
+                <p>Твои ПТКоины</p>
+                <p>999.999</p>
+            </section>    
+            <section>
+                <img src="imagesHeadFoot/student.png" alt="0" height="55" width="55">
             </section>
         </article>
     </header>
     <main>
-        <article id="firstContainer">
-            <section class="sectFC">Мой профиль</section>
-            <section class="sectFC">Топ-100 студентов</section>
-            <section id="activePage" class="sectFC">Иcтория оценивания</section>
-            <section class="sectFC">Дежурство</section>
-            <section class="imagesSectFC">
-                <img src="images/lock.png" alt="lock" height="52" width="40">
-                <p>Скоро</p>
+        <article id="mainGridBlock">
+            <section class="firstContainer">
+                <article class="navSettings">
+                    <button class="settingsDopBtn btn" type="button"><p>Дополнительно</p><img src="images/vector1.png" alt="0"></button>
+                    <button class="btn" type="button" id="buttonProf">Мой профиль</button>
+                    <button class="btn" type="button" id="buttonTop">Топ 100 студентов</button>
+                    <button id="open" class="btn" type="button">История оценивания</button>
+                    <button class="btn" type="button" id="buttonDez">Дежурство</button>
+                    <button class="dopClose" type="button"><img src="images/lock.png" alt="0" height="25" width="25">Скоро</button>
+                    <button class="dopClose" type="button"><img src="images/lock.png" alt="0" height="25" width="25">Скоро</button>
+                    <button class="dopClose" type="button"><img src="images/lock.png" alt="0" height="25" width="25">Скоро</button>
+                </article>
+                <article class="navSettings">
+                    <button class="settingsDopBtn btn" type="button"><p>Настройки</p><img src="images/vector1.png" alt="0"></button>
+                    <button class="btn" type="button">Изм. фото</button>
+                    <button class="btn" type="button">Пополнить ПТК коины</button>
+                    <button class="btn" type="button">Изменить ФИО</button>
+                    <button class="btn" type="button">Изменить группу</button>
+                </article>
             </section>
-            <section class="imagesSectFC">
-                <img src="images/lock.png" alt="lock" height="52" width="40">
-                <p>Скоро</p>
-            </section>
-        </article>
-        <article id="secondContainer">
-            <section id="historyScroll">
-                <article class="historyAssessments historyTablBlock">
-                    <p class="firstTextBlock">Оценка</p>
-                    <p class="secondTextBlock">Время</p>
-                    <p class="thirdTextBlock">Кого ты оценил</p>
-                </article>
-                <article class="historyAssessments historyTablBlock">
-                    <p class="firstTextBlock">10</p>
-                    <p class="secondTextBlock">31.31.3131 <br> 59:59</p>
-                    <p class="thirdTextBlock"><img src="images/student.png" alt="" height="40" width="40">Магамед Магамедов, гр. 0000</p>
-                </article>
-                <article class="historyAssessments historyTablBlock">
-                    <p class="firstTextBlock">10</p>
-                    <p class="secondTextBlock">31.31.3131 <br> 59:59</p>
-                    <p class="thirdTextBlock"><img src="images/student.png" alt="" height="40" width="40">Магамед Магамедов, гр. 0000</p>
-                </article>
-                <article class="historyAssessments historyTablBlock">
-                    <p class="firstTextBlock">10</p>
-                    <p class="secondTextBlock">31.31.3131 <br> 59:59</p>
-                    <p class="thirdTextBlock"><img src="images/student.png" alt="" height="40" width="40">Магамед Магамедов, гр. 0000</p>
-                </article>
-                <article class="historyAssessments historyTablBlock">
-                    <p class="firstTextBlock">10</p>
-                    <p class="secondTextBlock">31.31.3131 <br> 59:59</p>
-                    <p class="thirdTextBlock"><img src="images/student.png" alt="" height="40" width="40">Магамед Магамедов, гр. 0000</p>
-                </article>
-                <article class="historyAssessments historyTablBlock">
-                    <p class="firstTextBlock">10</p>
-                    <p class="secondTextBlock">31.31.3131 <br> 59:59</p>
-                    <p class="thirdTextBlock"><img src="images/student.png" alt="" height="40" width="40">Магамед Магамедов, гр. 0000</p>
-                </article>
-                <article class="historyAssessments historyTablBlock">
-                    <p class="firstTextBlock">10</p>
-                    <p class="secondTextBlock">31.31.3131 <br> 59:59</p>
-                    <p class="thirdTextBlock"><img src="images/student.png" alt="" height="40" width="40">Магамед Магамедов, гр. 0000</p>
-                </article>
-                <article class="historyAssessments historyTablBlock">
-                    <p class="firstTextBlock">10</p>
-                    <p class="secondTextBlock">31.31.3131 <br> 59:59</p>
-                    <p class="thirdTextBlock"><img src="images/student.png" alt="" height="40" width="40">Магамед Магамедов, гр. 0000</p>
-                </article>
-                <article class="historyAssessments historyTablBlock">
-                    <p class="firstTextBlock">10</p>
-                    <p class="secondTextBlock">31.31.3131 <br> 59:59</p>
-                    <p class="thirdTextBlock"><img src="images/student.png" alt="" height="40" width="40">Магамед Магамедов, гр. 0000</p>
+            <section id="secondContainer">
+                <article id="historyScroll">
+                    <section class="historyAssessments historyTablBlock">
+                        <p class="firstTextBlock">Оценка</p>
+                        <p class="secondTextBlock">Время</p>
+                        <article class="artHistory">
+                            <p class="thirdTextBlock">Кого ты оценил</p>
+                            <section class="sectHistory">
+                                <p class="fourthTextBlock">Аватарка, ФИО</p>
+                                <p class="fifthTextBlock">Номер группы</p>
+                            </section>
+                        </article>
+                    </section>
+                    <section class="historyAssessments historyTablBlock">
+                        <p class="firstTextBlock">10</p>
+                        <p class="secondTextBlock">31.31.3131 <br> 59:59 </p>
+                        <section class="sectHistory">
+                            <p class="sixthTextBlock"><img src="images/logo_profile_top.png" alt="#" height="55" width="55"> Магамед Магамедов Магамедович</p>
+                            <p class="seventhTextBlock">0000</p>
+                        </section>
+                    </section>
                 </article>
             </section>
         </article>
     </main>
     <footer>
-        <article>
-            <p>Мы молодая и энергичная команда,<br> готовая принять любые вызовы и<br> достичь целей. Наша страсть к работе<br> помогает нам преодолевать<br> препятствия и постоянно развиваться.<br> Мы гордимся быть частью этой<br> команды.</p>
-            <p>Студенты гр.2993</p>
-        </article>
-        <article>
-            <p>Следите за нами в соц.сетях<br> для актуальных новостей и<br> интересных акций!</p>
+        <p>Следите за нами в<br> соц.сетях для<br> актуальных новостей и<br> интересных акций!</p>
+        <article id="fotoLinks">
             <a href="vk.com">
                 <img src="imagesHeadFoot/vk.png" alt="0">
             </a>
@@ -109,14 +92,26 @@
                 <img src="imagesHeadFoot/telegram.png" alt="0">
             </a>       
         </article>
-        <article>
-            <h5>Адреса колледжей:</h5>
-            <p>ПТК НовГУ - ул. Большая Санкт-<br>Петербургская, 46, Великий<br> Новгород, 173003.</p>
-            <p>НовГУ - Великий Новгород, ул.<br> Большая Санкт-Петербургская, 41</p>
+        <article id="internetResources">
+            <h5>Интернет ресурсы НовГУ:</h5>
+            <section>
+                <a href="pk.novsu.ru">pk.novsu.ru</a>
+                <a href="novsu.ru">novsu.ru</a>
+                <a href="portal.novsu.ru">portal.novsu.ru</a>
+                <a href="do.novsu.ru">do.novsu.ru</a>
+            </section>
         </article>
-        <article>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1041.1074149428075!2d31.263725099232186!3d58.54141495901585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1708532031852!5m2!1sru!2sru" width="600" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <article id="address">
+            <h5>Адреса колледжей:</h5>
+            <section>
+                <p>ПТК НовГУ - ул. Большая Санкт-<br>Петербургская, 46, Великий<br> Новгород, 173003.</p>
+                <p>НовГУ - Великий Новгород, ул.<br> Большая Санкт-Петербургская, 41</p>
+            </section>
+        </article>
+        <article id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1041.1074149428075!2d31.263725099232186!3d58.54141495901585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1708532031852!5m2!1sru!2sru" width="229" height="160" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </article>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

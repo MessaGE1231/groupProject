@@ -7,58 +7,69 @@
 
 body {
     background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-main {
+#mainGridBlock {
     display: grid;
-    grid-template-columns: 40% 60%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    grid-template-columns: 30% 70%;
+    justify-content: center;
+    gap: 10px;
 }
 
-#firstContainer {
-    background-color: white;
+.firstContainer {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    width: 294px;
+    gap: 20px;
 }
 
-#activePage {
-    background-color: #ECE8FA;
+.navSettings {
+    display: flex;
+    flex-direction: column;
 }
 
-.sectFC {
-    background-color: #F8F8F8;
-    width: 565px;
-    height: 115px;
-    border-radius: 1000px;
+.btn {
+    height: 73px;
+    width: 294px;
+    font-size: 24px;
+    color: white;
+    background-color: #64549C;
+    border: none;
+    margin: 1px;
+}
+
+#open {
+    background-color: #150061;
+}
+
+.settingsDopBtn {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Inter, Roboto;
-    font-size: 48px;
-    font-weight: 600;
-    margin: 10px;
+    border: 1px solid #64549C;
+    border-radius: 5px 5px 0 0;
 }
 
-.imagesSectFC {
-    display: grid;
-    grid-template-columns: 40% 60%;
+.settingsDopBtn > img {
+    padding-left: 15px;
+}
+
+.dopClose {
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #D9D9D9;
-    width: 565px;
-    height: 115px;
-    border-radius: 1000px;
-    font-family: Inter, Roboto;
-    font-size: 48px;
-    font-weight: 600;
-    margin: 10px;
+    height: 73px;
+    width: 294px;
+    font-size: 24px;
+    color: white;
+    background-color: #999999;
+    border: none;
+    margin: 1px;
 }
 
-.imagesSectFC > img {
-    margin-left: 20px;
+.dopClose > img {
+    margin-right: 15px;
 }
 
 #secondContainer {
@@ -66,15 +77,22 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-right: 180px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
 }
 
 #historyScroll {
-    height: 830px;
-    width: 924px;
+    height: 1001px;
+    width: 1424px;
     font-size: 28px;
-    font-family: Inter, Roboto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #F8F8F8;
-    border-radius: 100px;
+    border-style: solid;
+    border-width: 2px 2px;
+    border-color: gray;
+    border-radius: 5px;
     overflow-y: scroll;
     overflow-x: hidden;
     direction: rtl;
@@ -100,11 +118,9 @@ main {
 
 .historyAssessments {
     display: grid;
-    grid-template-columns: 25% 25% 50%;
-}
-
-.historyAssessments > p {
-    height: 100px;
+    justify-content: center;
+    grid-template-columns: 17% 17% 66%;
+    gap: none;
 }
 
 .firstTextBlock {
@@ -113,6 +129,8 @@ main {
     align-items: center;
     border-bottom: 1.5px solid black;
     border-right: 1.5px solid black;
+    width: 240px;
+    height: 100px;
 }
 
 .secondTextBlock {
@@ -120,6 +138,15 @@ main {
     justify-content: center;
     align-items: center;
     border-bottom: 1.5px solid black;
+    width: 240px;
+    height: 100px;
+}
+
+.artHistory {
+    display: flex;
+    flex-direction: column;
+    width: 944px;
+    height: 100px;
 }
 
 .thirdTextBlock {
@@ -128,11 +155,63 @@ main {
     align-items: center;
     border-bottom: 1.5px solid black;
     border-left: 1.5px solid black;
+    width: 944px;
+    height: 50px;
 }
 
-.thirdTextBlock > img {
-    padding-right: 15px;
-    padding-left: 15px;
+.sectHistory {
+    display: flex;
+    flex-direction: row;
+    width: 944px;
+    height: 50px;
+}
+
+.fourthTextBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1.5px solid black;
+    border-right: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    width: 704px;
+    height: 50px;
+}
+
+.fourthTextBlock > p {
+    padding-right: 5px;
+}
+
+.fourthTextBlock > img {
+    padding-right: 28px;
+}
+
+.fifthTextBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1.5px solid black;
+    width: 240px;
+    height: 50px;
+}
+
+.sixthTextBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1.5px solid black;
+    border-right: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    width: 704px;
+    height: 100px;
+}
+
+.seventhTextBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1.5px solid black;
+    width: 240px;
+    height: 100px;
 }
 
 .historyTablBlock {

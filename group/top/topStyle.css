@@ -7,58 +7,69 @@
 
 body {
     background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-main {
+#mainGridBlock {
     display: grid;
-    grid-template-columns: 40% 60%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    grid-template-columns: 20% 80%;
+    justify-content: center;
+    gap: 30px;
 }
 
-#firstContainer {
-    background-color: white;
+.firstContainer {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    width: 294px;
+    gap: 20px;
 }
 
-#activePage {
-    background-color: #ECE8FA;
+.navSettings {
+    display: flex;
+    flex-direction: column;
 }
 
-.sectFC {
-    background-color: #F8F8F8;
-    width: 565px;
-    height: 115px;
-    border-radius: 1000px;
+.btn {
+    height: 73px;
+    width: 294px;
+    font-size: 24px;
+    color: white;
+    background-color: #64549C;
+    border: none;
+    margin: 1px;
+}
+
+#open {
+    background-color: #150061;
+}
+
+.settingsDopBtn {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Inter, Roboto;
-    font-size: 48px;
-    font-weight: 600;
-    margin: 10px;
+    border: 1px solid #64549C;
+    border-radius: 5px 5px 0 0;
 }
 
-.imagesSectFC {
-    display: grid;
-    grid-template-columns: 40% 60%;
+.settingsDopBtn > img {
+    padding-left: 15px;
+}
+
+.dopClose {
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #D9D9D9;
-    width: 565px;
-    height: 115px;
-    border-radius: 1000px;
-    font-family: Inter, Roboto;
-    font-size: 48px;
-    font-weight: 600;
-    margin: 10px;
+    height: 73px;
+    width: 294px;
+    font-size: 24px;
+    color: white;
+    background-color: #999999;
+    border: none;
+    margin: 1px;
 }
 
-.imagesSectFC > img {
-    margin-left: 20px;
+.dopClose > img {
+    margin-right: 15px;
 }
 
 #secondContainer {
@@ -66,12 +77,26 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 995px;
+    width: 1424px;
     direction: ltr;
 }
 
+#explanation {
+    display: grid;
+    grid-template-columns: 15% 15% 15% 40% 15%;
+    width: 1424px;
+}
+
+#explanation  > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
 #topScroll {
     height: 575px;
-    width: 950px;
+    width: 1424px;
     overflow-y: scroll;
     overflow-x: hidden;
     direction: rtl;
@@ -96,101 +121,121 @@ main {
 }
 
 #numberOne {
-    height: 125px;
-    width: 904px;
+    height: 75px;
+    width: 1400px;
     background-color: #E6D992;
-    border-radius: 15px;
     border-color: #000000;
     border-style: solid;
+    border-radius: 5px;
     border-bottom-width: initial;
-    display: flex;
+    display: grid;
+    grid-template-columns: 11% 17% 17% 42% 13%;
     align-items: center;
-    margin: 8px;
+    margin: 15px 8px;
     font-size: 32px;
     color: #000000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
+
 #numberTwo {
-    height: 125px;
-    width: 904px;
+    height: 75px;
+    width: 1400px;
     background-color: #DCDBDB;
-    border-radius: 15px;
     border-color: #000000;
     border-style: solid;
+    border-radius: 5px;
     border-bottom-width: initial;
-    display: flex;
+    display: grid;
+    grid-template-columns: 11% 17% 17% 42% 13%;
     align-items: center;
-    margin: 8px;
+    margin: 15px 8px;
     font-size: 32px;
     color: #000000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #numberThree {
-    height: 125px;
-    width: 904px;
+    height: 75px;
+    width: 1400px;
     background-color: #FFD0A1;
-    border-radius: 15px;
     border-color: #000000;
     border-style: solid;
+    border-radius: 5px;
     border-bottom-width: initial;
-    display: flex;
+    display: grid;
+    grid-template-columns: 11% 17% 17% 42% 13%;
     align-items: center;
-    margin: 8px;
+    margin: 15px 8px;
     font-size: 32px;
     color: #000000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .otherUser {
-    height: 125px;
-    width: 904px;
+    height: 75px;
+    width: 1400px;
     background-color: #F9F9F9;
-    border-radius: 15px;
     border-color: #000000;
     border-style: solid;
+    border-radius: 5px;
     border-bottom-width: initial;
-    display: flex;
+    display: grid;
+    grid-template-columns: 11% 17% 17% 42% 13%;
     align-items: center;
-    margin: 8px;
+    margin: 15px 8px;
     font-size: 32px;
     color: #000000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .topNumberBlock {
     direction: ltr;
 }
 
-.hundredth {
-    height: 125px;
-    width: 904px;
-    background-color: #EFF4FF;
-    border-radius: 15px;
-    border: solid #564592;
-    border-bottom-width: initial;
-    backdrop-filter: blur(10px);
-    display: flex;
-    align-items: center;
-    margin: 8px;
-    margin-right: 30px;
-    font-size: 32px;
-    color: #000000;
-}
-
-#numberOne > img {
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
 .num {
-    padding-right: 15px;
-    padding-left: 15px;
+    margin-left: 28px;
 }
 
-.nameUser {
-    padding-right: 15px;
-    padding-left: 70px;
-}
+.topNumberBlock > img {
+    margin-left: 125px;
+} 
 
 .rating {
-    padding-right: 15px;
-    padding-left: 15px;
+    margin-left: 16px;
+}
+
+#topScroll > section > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.hundredth {
+    height: 75px;
+    width: 1400px;
+    background-color: #EFF4FF;
+    border: solid #564592;
+    border-radius: 5px;
+    border-bottom-width: initial;
+    backdrop-filter: blur(10px);
+    display: grid;
+    grid-template-columns: 11% 17% 17% 42% 13%;
+    align-items: center;
+    margin: 8px;
+    margin-right: 6px;
+    font-size: 32px;
+    color: #000000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hundredth > img {
+    margin-left: 125px;
+} 
+
+.hundredth > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

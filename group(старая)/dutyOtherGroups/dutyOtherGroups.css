@@ -1,0 +1,157 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    color: dark;
+}
+
+body {
+    background-color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    gap: 115px;
+    align-items: center;
+}
+
+#firstContainer {
+    background-color: #A4B0F2; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    width: 270px;
+}
+
+.btnFirstContainer {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-family: Inter, Roboto;
+    border: none;
+    border-radius: 23px;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 210px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#firstDogScroll {
+    height: 900px;
+    width: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    direction: rtl;
+    scrollbar-color: white gray;
+    scrollbar-width: thin;
+}
+
+#firstDogScroll::-webkit-scrollbar {
+    width: 6px;              
+}
+
+#firstDogScroll::-webkit-scrollbar-track {
+    width: 2px;
+    height: 2px;
+    background-color: white;     
+}
+
+#firstDogScroll::-webkit-scrollbar-thumb {
+    width: 2px;
+    height: 2px;
+    background-color: gray;  
+}
+
+#firstDogScroll > button {
+    background-color: #A39E9E;
+    color: white;
+    font-size: 16px;
+    font-family: Inter, Roboto;;
+    border: none;
+    border-radius: 23px;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 170px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#secondContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    height: 655px;
+    width: 1332px;
+    border: none;
+    border-radius: 43px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .25);
+    direction: ltr;
+}
+
+#secondDogScroll {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: first baseline;
+    height: 655px;
+    width: 1290px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    direction: rtl;
+    scrollbar-color: white gray;
+    scrollbar-width: thin; 
+}
+
+ #secondDogScroll::-webkit-scrollbar {
+    width: 6px;              
+}
+
+#secondDogScroll::-webkit-scrollbar-track {
+    width: 2px;
+    height: 2px;
+    background-color: white;     
+}
+
+#secondDogScroll::-webkit-scrollbar-thumb {
+    width: 2px;
+    height: 2px;
+    background-color: gray;  
+}
+
+.blockSCS {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: black;
+    font-size: 40px;
+    padding-right: 175px;
+}
+
+.blockSCS > h2 {
+    direction: ltr;
+}
+
+.artBlockSCS {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 270px;
+    width: 450px;
+}
+
+.artBlockSCS > p {
+    direction: ltr;
+}

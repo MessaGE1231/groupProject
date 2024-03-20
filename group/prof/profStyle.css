@@ -7,120 +7,167 @@
 
 body {
     background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-main {
+#mainGridBlock {
     display: grid;
-    grid-template-columns: 40% 60%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    grid-template-columns: 20% 80%;
+    justify-content: center;
+    gap: 30px;
 }
 
-#firstContainer {
-    background-color: white;
+.firstContainer {
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
+    width: 294px;
+    gap: 20px;
+}
+
+.navSettings {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    height: 73px;
+    width: 294px;
+    font-size: 24px;
+    color: white;
+    background-color: #64549C;
+    border: none;
+    margin: 1px;
+}
+
+#open {
+    background-color: #150061;
+}
+
+.settingsDopBtn {
+    display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid #64549C;
+    border-radius: 5px 5px 0 0;
 }
 
-#activePage {
-    background-color: #ECE8FA;
+.settingsDopBtn > img {
+    padding-left: 15px;
 }
 
-.sectFC {
-    background-color: #F8F8F8;
-    width: 565px;
-    height: 115px;
-    border-radius: 1000px;
+.dopClose {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Inter, Roboto;
-    font-size: 48px;
-    font-weight: 600;
-    margin: 10px;
+    height: 73px;
+    width: 294px;
+    font-size: 24px;
+    color: white;
+    background-color: #999999;
+    border: none;
+    margin: 1px;
 }
 
-.imagesSectFC {
+.dopClose > img {
+    margin-right: 15px;
+}
+
+.secondContainer {
     display: grid;
-    grid-template-columns: 40% 60%;
-    justify-content: center;
+    grid-template-rows: 50% 50%;
+    width: 1424px;
+    height: 995px;
+    font-size: 36px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #564592;
+    background-color: rgba(86, 69, 146, .03);
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+.secondContainer > article:first-child {
+    display: flex;
+    justify-content: start;
     align-items: center;
-    background-color: #D9D9D9;
-    width: 565px;
-    height: 115px;
-    border-radius: 1000px;
-    font-family: Inter, Roboto;
-    font-size: 48px;
-    font-weight: 600;
-    margin: 10px;
+    height: 418px;
+    width: fit-content;
 }
 
-.imagesSectFC > img {
-    margin-left: 20px;
+.secondContainer > article:first-child > img {
+    margin: 0 35px;
 }
 
-#secondContainer {
+#firstInfoProf {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 418px;
+    width: 1000px;
+    gap: 20px;
+    margin: 20px 0;
 }
 
-#fioBox {
+#firstInfoProf > article:first-child {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.firstText {
+    border-right: 3px solid #564592;
+    border-bottom: 3px solid #564592;
+    display: flex;
+    justify-content: center;
+    padding: 0 75px;
+}
+
+#secondText {
+    border-bottom: 3px solid #564592;
+    display: flex;
+    justify-content: center;
+    padding: 0 75px;
+}
+
+.thirdText {
+    border-right: 3px solid #564592;
+    display: flex;
+    justify-content: center;
+    padding: 0 75px;
+}
+
+#firstInfoProf > article:first-child > p:last-child {
+    display: flex;
+    justify-content: center;
+    padding: 0 75px;
+}
+
+#firstInfoProf > article:last-child {
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    justify-content: start;
+    align-items: start;
+    padding-right: 450px;
+}
+
+.secondContainer > article:last-child {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-#student {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-family: Inter, Roboto;
+.secondContainer > article:last-child > section > p {
+    margin: 25px 0;
+}
+
+.secondContainer > article:last-child > section > p:last-child {
     font-size: 64px;
-    font-weight: 600;
 }
 
-#student > img {
-    margin-right: 10px;
-}
-
-#rating {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-items: center;
-    font-family: Inter, Roboto;
-    font-size: 58px;
-    font-weight: 600;
-}
-
-#assessment {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 1155px;
-    height: 151px;
-    border-radius: 31px;
-    background-color: #1C3578BF;
-    color: white;
-    font-family: Inter, Roboto;
-    font-size: 32px;
-    font-weight: 600;
-}
-
-#assessment > button {
-    width: 325px;
-    height: 70px;
-    background-color: #B40000BF;
-    border-radius: 25px;
-    box-shadow: 2px 2px 2px black;
-    color: white;
-    font-family: Inter, Roboto;
-    font-size: 32px;
+#backgroundText {
+    background-color: #FFE8E3;
+    border-radius: 5px;
 }
