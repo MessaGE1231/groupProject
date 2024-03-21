@@ -5,6 +5,103 @@
     color: dark;
 }
 
+/* модалка */
+
+.modalAppSection {
+    display: none;
+    position: fixed;
+    align-self: center;
+    z-index: 1;
+    width: 50%;
+    height: 50%;
+    background-color: #333333;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    /* overflow-y: scroll; */
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.modalAppContent {
+    display: none;
+    width: 95%;
+    height: 95%;
+    align-items: center;
+    padding: 20px 0px 100px 0px;
+    flex-direction: column;
+    color: white;
+}
+
+
+#regButtonModal {
+    background: none;
+    border: none;
+    font-size: 24px;
+    padding: 0px 20px;
+    transition: .2s;
+}
+
+#regButtonModal:hover {
+    padding: 0px 25px;
+}
+
+form > input {
+    background-color: #cecece;
+}
+
+#loginErrorEmpty {
+    background-color: darkred;
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    border: none;
+    top: 5px;
+}
+
+
+
+
+#authButton {
+    background: none;
+    color: white;
+    border: none;
+    width: fit-content;
+    padding: 5px;
+}
+
+#accordeonRegContent > h1 {
+color: white;
+text-align: center;
+padding: 10px;
+font-size: 24px;
+
+}
+
+#accordeonRegContent > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#accordeonRegContent > form > input {
+    padding: 10px;
+    width: fit-content;
+}
+
+#accordeonRegContent > form > input {
+    margin-top: 10px;
+}
+
+#accordeonRegContent > form > button {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+
+
+
 body {
     background-color: white;
 }
@@ -450,27 +547,4 @@ h1 {
         padding: 12px;
         margin: 14px 0;
     }
-}
-
-.modalAppSection {
-    display: none;
-    width: fit-content;
-    height: fit-content;
-    position: absolute;
-    background-color: white;
-}
-
-.modalAppContent {
-    position: absolute;
-    display: none;
-    width: fit-content;
-    height: fit-content;
-    background-color: black;
-    padding: 20px 150px;
-}
-.modalAppContent > h2 {
-    background:none;
-    color: white;
-    padding: 0;
-    margin: 0;
 }

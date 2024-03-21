@@ -86,6 +86,13 @@ header {
     justify-content: end;
 }
 
+#regSectionButton {
+    display: flex;
+    justify-content: end;
+}
+
+
+
 #navEnter {
     height: 55px;
     width: 345px;

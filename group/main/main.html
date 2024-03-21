@@ -13,6 +13,7 @@
             <img src="imagesHeadFoot/logo-novgu.png" href="vk.com" alt="0" height="50" width="50">
             <img src="imagesHeadFoot/novgu.png" href="vk.com" alt="0" height="50" width="140">
         </article>
+
         <nav id="navLink">
 
                 <a type="button" href="#container" class="link">Топ 5 студентов</a>
@@ -21,10 +22,10 @@
                 <button  id="buttonAcordion">Ещё</button>
             </section>
         </nav>
-        <article class="headerKoin">
+        <!-- <article class="headerKoin">
             <section id="navEnter">
 
-                <section >
+                <section>
                     <p>Твои ПТКоины</p>
                     <p>999.999</p>
                 </section>    
@@ -32,7 +33,34 @@
                     <img src="imagesHeadFoot/student.png" alt="0" height="55" width="55">
                 </section>
             </section>
+        </article> -->
+
+        <article id="regSectionButton">
+            <button id="regButtonModal">Регистрация</button>
         </article>
+
+        <section class="modalAppSection">
+            <article class="modalAppContent" id="accordeonRegContent">
+                <h2 id="regAccordeonH1">Регистрация</h2>
+                <form name="regForm" id="regForm">
+                    <dialog id="loginErrorEmpty"></dialog>
+                    <input id="login" type="text" name="login" placeholder="Логин" minlength="4" maxlength="8">
+                    <input type="text" name="password" placeholder="Пароль" minlength="6" maxlength="12">
+                    <input type="text" name="forgotPassword" placeholder="Повторите пароль" minlength="6" maxlength="12">
+                    <input type="text" name="email" placeholder="Введите почту" minlength="8" maxlength="40">
+                    <input type="text" name="numberPhone" placeholder="Номер телефона" maxlength="12">
+                    <button name="submit">Зарегестрироваться</button>
+                    
+                </form>
+                
+                <form name="authForm" id="authForm">
+                    <input id="login" type="text" name="login" placeholder="Логин" minlength="4" maxlength="8">
+                    <input type="text" name="password" placeholder="Пароль" minlength="6" maxlength="12">
+                    <button name="submit">Авторизоваться</button>
+                </form>
+                <button id="authButton">Уже есть аккаунт?</button>
+            </article>
+        </section>
     </header>
     <main>
         <article id="firstBlock">
@@ -41,11 +69,7 @@
 
         </article>
 
-        <section class="modalAppSection">
-            <article class="modalAppContent">
-                <h2>Регистрация</h2>
-            </article>
-        </section>
+
 
         <article id="aboutUs" class="text">
                 <h2>О нас</h2>
