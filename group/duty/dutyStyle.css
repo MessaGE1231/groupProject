@@ -313,3 +313,40 @@ body {
     margin: 5px 0;
     margin-left: 50px;
 }
+
+@keyframes openDialog {
+    0% {
+    opacity: 0.5;
+    top: -10px;
+    }
+    100% {
+    opacity: 1;
+    top: 10px;
+    }
+}
+
+@keyframes closeDialog {
+    0% {
+    opacity: 1;
+    top: 10px;
+    }
+    100% {
+    opacity: 0;
+    top: -10px;
+    }
+}
+
+#notificationSendCoins {
+    width: fit-content;
+    height: fit-content;
+    padding: 25px;
+    border-radius: 5px;
+    margin: auto;
+    top: 10px;
+    position: fixed;
+    background-color: green;
+    color: white;
+    border: none;
+    animation: openDialog .5s;
+}
+

@@ -1,4 +1,3 @@
-// const { doc } = require("prettier");
 
 document.getElementById("buttonAcordion").addEventListener("click", () => {
     if(document.getElementById("Accordion")) {
@@ -49,11 +48,16 @@ let users = []
 
 if (localStorage.getItem("users")) {users = JSON.parse(localStorage.getItem("users"))}
 
+
+
+
+
+
 document.forms.regForm.submit.addEventListener("click", (event) => {
     event.preventDefault()
     let login = document.forms.regForm.login
     let password = document.forms.regForm.password
-    let forgotPassword = document.forms.regForm.forgotPassword
+    let group = document.forms.regForm.group
     let email = document.forms.regForm.email
     let numberPhone = document.forms.regForm.numberPhone
 
@@ -65,8 +69,8 @@ if (login.value.length === 0) {return errText = `Ошибка: поле "${login
 } else if (login.value.length < 4) {return errText = `Ошибка: поле "${login.placeholder}" меньше 4 символов`
 } else if (password.value.length === 0) {return errText = `Ошибка: поле "${password.placeholder}" не заполнено`
 } else if (password.value.length < 6) {return errText = `Ошибка: поле "${password.placeholder}" меньше 6 символов`
-} else if (forgotPassword.value.length === 0) {return errText = `Ошибка: поле "${forgotPassword.placeholder}" не заполнено`
-} else if (forgotPassword.value.length < 6) {return errText = `Ошибка: поле "${forgotPassword.placeholder}" меньше 6 символов`
+} else if (group.value.length === 0) {return errText = `Ошибка: поле "${group.placeholder}" не заполнено`
+} else if (group.value.length < 4) {return errText = `Ошибка: поле "${group.placeholder}" меньше 4 символов`
 } else if (email.value.length === 0) {return errText = `Ошибка: поле "${email.placeholder}" не заполнено`
 } else if (email.value.length < 8) {return errText = `Ошибка: поле "${email.placeholder}" меньше 8 символов`
 } else if (numberPhone.value.length === 0) {return errText = `Ошибка: поле "${numberPhone.placeholder}" не заполнено`
@@ -76,7 +80,7 @@ if (login.value.length === 0) {return errText = `Ошибка: поле "${login
 
 err()
   
-if (login.value.length < 4 || password.value.length < 6 || forgotPassword.value.length < 6 || email.value.length < 8 || numberPhone.value.length < 10) {
+if (login.value.length < 4 || password.value.length < 6 || group.value.length < 4 || email.value.length < 8 || numberPhone.value.length < 10) {
 document.getElementById('loginErrorEmpty').textContent = errText
     if (!document.getElementById('loginErrorEmpty').hasAttribute("open")) {
     return document.getElementById('loginErrorEmpty').toggleAttribute("open")
@@ -89,7 +93,7 @@ if (error === false) {
     users.push({
         login: login.value,
         password: password.value,
-        forgotPassword: forgotPassword.value,
+        group: group.value,
         email: email.value,
         phone: numberPhone.value
     })
@@ -100,7 +104,8 @@ if (error === false) {
         document.getElementById('loginErrorEmpty').textContent = errText
         document.getElementById('loginErrorEmpty').toggleAttribute("open")
 
-        setTimeout(() => {document.getElementById('loginErrorEmpty').removeAttribute("open")}, 2000)
+        setTimeout(() => {document.getElementById('loginErrorEmpty').removeAttribute("open"); document.getElementById('loginErrorEmpty').style.background = "darkred"}, 2000)
+        
         
 
 } else {return}
@@ -121,6 +126,8 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('authButton').textContent = ''
     }
 })
+
+// Авторизация
 
 document.getElementById('authButton').addEventListener('click', (event) => {
     event.preventDefault()

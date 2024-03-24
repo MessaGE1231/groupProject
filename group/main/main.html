@@ -46,7 +46,12 @@
                     <dialog id="loginErrorEmpty"></dialog>
                     <input id="login" type="text" name="login" placeholder="Логин" minlength="4" maxlength="8">
                     <input type="text" name="password" placeholder="Пароль" minlength="6" maxlength="12">
-                    <input type="text" name="forgotPassword" placeholder="Повторите пароль" minlength="6" maxlength="12">
+                    <!-- <input type="text" name="group" placeholder="Номер группы" maxlength="4"> -->
+                    <select name="group" id="selectorGroup" placeholder="Выберите группу">
+                        <option value="">Выберите группу</option>
+
+
+                    </select>
                     <input type="text" name="email" placeholder="Введите почту" minlength="8" maxlength="40">
                     <input type="text" name="numberPhone" placeholder="Номер телефона" maxlength="12">
                     <button name="submit">Зарегестрироваться</button>
@@ -164,5 +169,6 @@
         </article>
     </footer>
     <script src="script.js"></script>
+    <script type="module" src="../array_group.json"></script>
 </body>
 </html>
