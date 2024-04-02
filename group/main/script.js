@@ -1,3 +1,9 @@
+function scriptInclude() {
+    const js = document.createElement("script");
+    js.type = "text/javascript";
+    js.src = "../script.js";
+    document.body.appendChild(js);
+}
 
 document.getElementById("buttonAcordion").addEventListener("click", () => {
     if(document.getElementById("Accordion")) {
@@ -28,6 +34,12 @@ document.getElementById("buttonAcordion").addEventListener("click", () => {
 })
 
 document.getElementById('regButtonModal').addEventListener('click', () => {
+    let data = JSON.parse(localStorage.getItem("studentsAll"))
+    data.forEach((el) => {
+        let option = document.createElement("option")
+        option.textContent = `${el[0]}`
+        document.getElementById("selectorGroup").insertAdjacentElement("beforeend", option)
+    })
     let modalAppSection = document.querySelector('.modalAppSection')
     let modalAppContent_article = document.querySelector('.modalAppContent')
     if (modalAppSection.style.display === "block") {
@@ -40,6 +52,12 @@ document.getElementById('regButtonModal').addEventListener('click', () => {
         document.body.style.overflow = "hidden"
     }
 
+})
+
+document.getElementById("selectorGroup").addEventListener("click", () => {
+    if(document.getElementById("optinBase").style.display = "block") {
+        document.getElementById("optinBase").style.display = "none"
+    } 
 })
 
 //reg
@@ -118,6 +136,7 @@ if (error === false) {
 })
 
 document.addEventListener('DOMContentLoaded', () => {
+    scriptInclude()
     document.getElementById('authForm').style.display = "none"
     if (JSON.parse(localStorage.getItem("auth")) === true) {
         document.getElementById('authForm').style.display = "none"
@@ -166,3 +185,4 @@ document.getElementById('authButton').textContent = ''
 })
 
 //reg end
+

@@ -1,3 +1,11 @@
+function scriptInclude() {
+    const js = document.createElement("script");
+    js.type = "text/javascript";
+    js.src = "../script.js";
+    document.body.appendChild(js);
+  }
+
+
 document.getElementById("buttonDrug").addEventListener("click", () => {
     document.location = "../dutyOtherGroups/dutyOtherGroups.html"
 })
@@ -41,7 +49,7 @@ document.getElementById("buttonAcordion").addEventListener("click", () => {
     }
 })
 
-let arrayGroups = [
+/*let arrayGroups = [
     ['2993', {
     1: {
         id: '2993_1',
@@ -133,7 +141,7 @@ let arrayGroups = [
         coins: 0,
         image: null
     }
-}]]
+}]]*/
 
 
 
@@ -141,7 +149,7 @@ let arrayGroups = [
 
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    
+    scriptInclude()
     if (!localStorage.getItem('studentsAll')) {
 
     } else {arrayGroups = JSON.parse(localStorage.getItem("studentsAll"))}
